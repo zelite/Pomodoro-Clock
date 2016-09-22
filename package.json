@@ -17,6 +17,6 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
-  }
+  },
   "homepage": "https://zelite.github.io/Pomodoro-Clock"
 }
