@@ -1,0 +1,64 @@
+.App{
+  text-align: center;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.work{
+  color: blue;
+}
+
+.break{
+  color: green;
+}
+
+.duration-selector{
+  display: block;
+}
+
+.timeSelector button{
+  font-size: 2rem;
+  width: 100%;
+}
+
+.selectedTime{
+  font-size: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.main-timer{
+  display: inline-block;
+ 
+}
+
+.timeLeft{
+  font-size: 7rem;
+}
+
+@media (min-width: 400px) {
+  .duration-selector{
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .timeSelector button{
+    width: auto;
+    display: inline-block;
+}
+
+.increase{
+  float: right;
+}
+
+.decrease{
+  float:left;
+}
+
+.selectedTime{
+  display: inline-block;
+}
+}
+
