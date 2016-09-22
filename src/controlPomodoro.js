@@ -1,9 +1,9 @@
 var model = {
   init: function() {
-    this.workTimer = 25 * 60 * 1000; //25mins
+    this.workTimer = 0.1 * 60 * 1000; //25mins
     this.timerActive = false;
     this.timeLeft = this.workTimer;
-    this.breakTimer = 5 * 60 * 1000; //5mins
+    this.breakTimer = 0.1 * 60 * 1000; //5mins
     this.pomodoroCount = 0;
     this.timerType = "work";
     this.timeIsUp = false;

@@ -82,9 +82,9 @@ class App extends Component {
   }
 
   render() {
-    var classes = "App ";
+    var classes = "App "+this.state.timerType;
     if(this.state.timeIsUp){
-      classes += "animated shake";
+      classes += " animated shake";
     }
     return (
       <div className={classes}>

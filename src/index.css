@@ -1,3 +1,16 @@
+body{
+  background-color: #50514F;
+  color: white;
+}
+h1{
+  font-weight: 800;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #F25F5C;
+  color: white;
+  text-transform: uppercase;
+}
+
 .App{
   text-align: center;
   max-width: 90rem;
@@ -6,16 +19,36 @@
   padding: 2rem;
 }
 
-.work{
-  color: blue;
+.App.work{
+  color: #5B5F97;
+  background-color: #FFE066;
+  transition: background-color 2s;
 }
 
-.break{
-  color: green;
+.App.break{
+  color: #FAF3DD;
+  background-color: #70C1B3;
+  transition: background-color 2s;
 }
+
 
 .duration-selector{
   display: block;
+}
+
+
+.App.work button{
+  background-color: #5B5F97;
+  color: white;
+  border-color: #5B5F97;
+  margin: 0.1rem;
+}
+
+.App.break button{
+  background-color: #FAF3DD;
+  color: #70C1B3;
+  border-color: #FAF3DD;
+  margin: 0.1rem;
 }
 
 .timeSelector button{
@@ -30,8 +63,12 @@
 }
 
 .main-timer{
+  margin-top: 2rem;
   display: inline-block;
- 
+}
+
+.what-time{
+  font-size: 4rem;
 }
 
 .timeLeft{
@@ -62,3 +99,7 @@
 }
 }
 
+footer{
+  text-align: center;
+  margin-top: 2rem;
+}
