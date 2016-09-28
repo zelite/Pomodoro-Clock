@@ -75,6 +75,13 @@ h1{
   font-size: 7rem;
 }
 
+.pomodoros{
+  margin-top: 0.5rem;
+  height: 3.5rem;
+  color: #F25F5C;
+}
+
+
 @media (min-width: 400px) {
   .duration-selector{
     display: inline-block;
