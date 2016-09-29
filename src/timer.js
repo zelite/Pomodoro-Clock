@@ -47,8 +47,12 @@ class Timer extends Component{
 
 class PomodoroCount extends Component{
     render(){
-        var one_tomato = <i className="material-icons animated fadeIn">brightness_1</i>;
-        var pomodoros = Array(this.props.count).fill(one_tomato);
+        var pomodoros = [];
+        for (var i = 0; i < this.props.count; i++){
+            pomodoros.push(
+                <i key={i} className="material-icons animated fadeIn">brightness_1</i>
+                );
+        }
         return(
             <div className="pomodoros">{pomodoros}</div>
             );

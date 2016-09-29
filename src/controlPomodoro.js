@@ -1,3 +1,5 @@
+import alarm from "./Arcadia.mp3";
+
 var model = {
   init: function() {
     this.workTimer = 25 * 60 * 1000; //25mins
@@ -34,6 +36,8 @@ var model = {
 };
 
 model.init();
+
+var alarmAudio = new Audio(alarm);
 
 var controlPomodoro = {
   getCurrentTime: function() {
@@ -99,6 +103,7 @@ var controlPomodoro = {
     }.bind(this), 50);
   },
   onTimeIsUp: function(){
+    alarmAudio.play();
     model.timeIsUp = true;
     setInterval(function(){
       model.timeIsUp = false;
